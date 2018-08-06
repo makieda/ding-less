@@ -1,0 +1,5 @@
+1. add users to a database
+2. postings page 
+3. postings seperately filtered by lesson type
+4. teacher page( hover over and gets bigger) = super hard
+5. student sees teacher info once logged in 

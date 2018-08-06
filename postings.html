@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="postings.css" type="text/css" />
+   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBUuYQxyPfgh2qRTZE91Qb3DLcK8QnRR_Q",
+    authDomain: "ding-lessons.firebaseapp.com",
+    databaseURL: "https://ding-lessons.firebaseio.com",
+    projectId: "ding-lessons",
+    storageBucket: "ding-lessons.appspot.com",
+    messagingSenderId: "583411048250"
+  };
+  firebase.initializeApp(config);
+</script>
+
+   
+    </head>
+    <body>
+         <nav class="navbar navbar-expand-lg navbar-default navbar-light bg-light navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
+    <a class="navbar-brand" href="teacherInfo.html"><i class="far fa-address-card"></i></a>
+    <a class="navbar-brand" href="postings.html"><i class="fas fa-search"></i></a>
+    <a class="navbar-brand" href="index.html" id="signOut"><i class="fas fa-sign-out-alt"></i></a>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123454143-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123454143-1');
+</script>
+
+      
+  </div>
+</nav>
+<input class="search" placeholder="Search by lesson type">
+<button class="btn">Search</button>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6 ">
+  <div id="postings">
+  
+  </div>
+  </div>
+  </div>
+</div>
+<script type="text/javascript" src="postings.js"></script>
+        
+    </body>
+</html>

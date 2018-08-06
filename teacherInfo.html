@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="teacherInfo.css" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBUuYQxyPfgh2qRTZE91Qb3DLcK8QnRR_Q",
+    authDomain: "ding-lessons.firebaseapp.com",
+    databaseURL: "https://ding-lessons.firebaseio.com",
+    projectId: "ding-lessons",
+    storageBucket: "ding-lessons.appspot.com",
+    messagingSenderId: "583411048250"
+  };
+  firebase.initializeApp(config);
+</script>
+    
+    
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
+    <a class="navbar-brand" href="teacherInfo.html"><i class="far fa-address-card"></i></a>
+    <a class="navbar-brand" href="postings.html"><i class="fas fa-search"></i></a>
+    <a class="navbar-brand" href="index.html"><i class="fas fa-sign-out-alt"></i></a>
+  </div>
+</nav>
+    <div class="container">
+        <h1 id="headers">Posting Lessons</h1>
+        <form>
+        <div class="row justify-content-around " id="picture">
+            <div class="col-6 jumbotron">
+                    <img class="img-fluid rounded-circle" src="https://static.licdn.com/scds/common/u/images/themes/katy/ghosts/person/ghost_person_200x200_v1.png" width=75% height=50% id="profile-pic" class="center">
+              
+                    <div class="col-6"></div>
+                  
+                    <div class="form-group">
+                <label for name="Pic">
+                    Picture Of Yourself:
+                </label>
+            <input type="file" id="file"
+               accept="image/png, image/jpeg" name="Pic">
+                   </div>
+                   <div class="form-group">
+                       <label for name="name">
+                           Full Name
+                       </label>
+                       <input class="form-control" type="text" placeholder="Johny Appleseed" name="name" id="name">
+                   </div>
+              <div class="form-group">
+              <select id="platforms" class="selectpicker">
+                 <option value="Lessons">Lesson Type</option> 
+                <option value="Art">Art</option> 
+                <option value="Dance">Dance</option>
+                <option value="Music">Music</option>
+                <option value="Sport">Sport</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for name="description">Lesson Description </label>
+                <textarea class="form-control" row="6" name="description" id="description" placeholder="What lesson are you offering? Are you willing to travel? What is your lowest minimum price? Include any information you believe is neccesary for your student to know."> </textarea>
+                
+            </div>
+            <div class="form-group">
+                <label for name="phone">
+                Phone Number
+                </label>
+                <input class="form-control" type="text" placeholder="(###) ###-###" name="phone" id="number">
+                
+            </div>
+            <button class="btn btn-submit" id="post">
+                Submit
+            </button>
+            
+        </div>
+        </form>   
+    </div>
+    <script type="text/javascript" src="teacherInfo.js"></script>
+    </body>
+
+</html>

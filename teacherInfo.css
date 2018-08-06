@@ -1,0 +1,17 @@
+body {
+    background-color: #FF8463;
+}
+
+#picture {
+    padding-top: 50px;
+    
+}
+
+#headers {
+    text-align:center ;
+    font-family: serif;
+}
+
+.jumbotron {
+    background-color: white
+}

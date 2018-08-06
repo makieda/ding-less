@@ -1,0 +1,28 @@
+body {
+    background-color: #FFFA97;
+}
+
+h3 {
+    text-align: center
+}
+
+#slogan {
+    font-weight: bold;
+
+}
+
+#backButton {
+    padding-left: 30px
+}
+
+.jumbotron {
+    background-color: white
+}
+
+.btn {
+    color: black;
+}
+
+#buttonSignUp {
+    background-color:#FFD257;
+}
