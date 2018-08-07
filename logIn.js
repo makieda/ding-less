@@ -14,10 +14,11 @@ logIn.addEventListener("click", ()=>{
 
 
 function signIn(email,password) {
-    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+    firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
+   window.location='teacherInfo.html';
+}, function(error) {
+  console.error('Sign Out Error', error);
+})
+ 
+ 
 
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message; })
-  window.location="teacherInfo.html"
-} 
