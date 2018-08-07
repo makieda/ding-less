@@ -2,8 +2,10 @@ let logIn=document.querySelector("#logIn")
 let email=document.querySelector("#email")
 let password= document.querySelector("#password")
 logIn.addEventListener("click", ()=>{
-    console.log("it works")
+    console.log(email.value)
+    console.log(password.value)
     signIn(email.value,password.value)
+    console.log(firebase.auth().currentUser)
 
 
     

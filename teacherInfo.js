@@ -71,12 +71,17 @@ uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
     let name=document.querySelector("#name").value
     let description=document.querySelector("#description").value
     let phone=document.querySelector("#number").value
+    let plat=document.querySelector("#platforms")
+     let type = plat.options[plat.selectedIndex].value;
+    console.log(type)
     
     let post=  {
         image: image,
         name:name,
         description:description,
-        phone:phone}
+        phone:phone,
+        type: type
+    }
         console.log(post)
           firebase.database().ref('/').once('value', (snapshot)=>{
       let user = snapshot.val()

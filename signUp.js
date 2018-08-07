@@ -8,6 +8,7 @@ button.addEventListener("click", (e) => {
 
     console.log(password.value)
     console.log(email.value)
+  
 
     if (password.value != passwordConf.value) {
         window.alert("passwords must match");
@@ -15,7 +16,9 @@ button.addEventListener("click", (e) => {
     else {
         registerUser(email.value, password.value)
         checkBoxes()
-         window.location='teacherInfo.html'
+ 
+
+       
        
     }
 })
@@ -33,7 +36,7 @@ function checkBoxes() {
     if (checkbox1.checked== true) {
      checkbox="teacher"
      addUserToDatabase()
-     
+     window.location='teacherInfo.html'
      
     }
     else if (checkbox2.checked==true) {
